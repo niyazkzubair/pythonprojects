@@ -8,3 +8,5 @@ review_stats_1.sort_values([('score', 'size')], ascending=False)
 atleast_50_reviews = review_stats_1['score']['size'] > 50
 df_1 = review_stats_1[atleast_50_reviews].sort_values([('score', 'mean')], ascending=False)
 
+df_2 = (ur_sub_set_1.groupby('product')['score'].aggregate(np.count_nonzero)).to_frame()
+
