@@ -1,0 +1,10 @@
+Dataframe
+
+#put total number of reviews and mean rating for all models
+review_stats_1 = ur_sub_set_1.groupby(['product']).agg({'score': [np.size, np.mean]})
+review_stats_1.sort_values([('score', 'size')], ascending=False)
+
+#extract models with more than 50 reviews and sort based on best mean rating
+atleast_50_reviews = review_stats_1['score']['size'] > 50
+df_1 = review_stats_1[atleast_50_reviews].sort_values([('score', 'mean')], ascending=False)
+
