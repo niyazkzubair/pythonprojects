@@ -10,3 +10,5 @@ df_1 = review_stats_1[atleast_50_reviews].sort_values([('score', 'mean')], ascen
 
 df_2 = (ur_sub_set_1.groupby('product')['score'].aggregate(np.count_nonzero)).to_frame()
 
+df1 = df.reset_index().drop_duplicates(subset=['Age','Height'],keep='first').set_index('index')
+
