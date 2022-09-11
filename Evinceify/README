@@ -7,6 +7,8 @@ The top file to run for this is kivy_test.py
 STEPS FOLLOWED ON RPI
 
 1. Install miniconda3 (https://www.analyticsvidhya.com/blog/2021/05/miniconda-on-raspberry-pi-for-machine-learning/)
+    - cd /home/pi/miniconda3/bin
+    - ./conda list (to see list installed packages in conda)
 2. Install kivy
     - python -m pip install --upgrade pip setuptools virtualenv
     - sudo apt update
