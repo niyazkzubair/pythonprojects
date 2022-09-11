@@ -2,3 +2,20 @@
 10th SEP 2022
 
 The top file to run for this is kivy_test.py
+
+
+STEPS FOLLOWED ON RPI
+
+1. Install miniconda3 (https://www.analyticsvidhya.com/blog/2021/05/miniconda-on-raspberry-pi-for-machine-learning/)
+2. Install kivy
+    - python -m pip install --upgrade pip setuptools virtualenv
+    - sudo apt update
+    - sudo apt install pkg-config libgl1-mesa-dev libgles2-mesa-dev    libgstreamer1.0-dev    gstreamer1.0-plugins-{bad,base,good,ugly}    gstreamer1.0-{omx,alsa} libmtdev-dev    xclip xsel libjpeg-dev
+    - sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
+    - sudo pip install git+https://github.com/kivy/kivy.git@master
+    - pip list
+3. Install bidi
+    - pip install python-bidi
+    
+
+Run the kivy_test.py from Thonny editor
